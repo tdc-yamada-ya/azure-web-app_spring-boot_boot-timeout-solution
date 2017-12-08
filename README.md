@@ -107,7 +107,7 @@ public static HttpServer createStartupDummyHttpServer(int port) {
 
 ダミーHTTPサーバとしてJettyを使っても良かったのですが、上手く起動しなかったためApache HttpComponentsのHttpServerで代用しています。
 
-上記のコードを動かすとSpring Bootが起動完了するまでは常に200 OKを返すように動くため、再起動を防止することができます。
+上記のコードを動かすとSpring Bootが起動完了するまでは常に200 OKを返すように動くため、起動タイムアウトによる再起動を防止することができます。
 
 ## 他にもっと良いやり方が無いか
 
